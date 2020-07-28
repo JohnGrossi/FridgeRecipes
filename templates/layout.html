@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% if title %}
+        <title> Fridge - {{ title }} </title>
+    {% else %}
+        <title> Fridge </title>
+    {% endif %}
+</head>
+
+<body>
+    <!-- children override content -->
+    {% block content %}{% endblock %}
+</body>
+
+</html>
